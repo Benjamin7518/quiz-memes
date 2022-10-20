@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Template</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <div class="button">
+        <a href="/"><button type="submit">Home</button></a>
+    </div>
+    <div class="header_container">
+            <p>1. How many Official Capitals <br> Does South Africa Have?</p>
+    </div>
+    <div class="container">
+    <form action="/validateq1">
+        <div class="Field">
+            <label for="1 Capital">
+                1
+                </label>
+            <input type="radio" id="1 Capital" name="callCapital" checked value="a"/>
+        </div>
+        <div class="Field">
+            <label for="2 Capitals">
+                2
+                </label>
+            <input type="radio" id="2 Capitals" name="callCapital" value="b" />
+        </div>
+        <div class="Field">
+            <label for="3 Capitals">
+                3
+                </label>
+            <input type="radio" id="3 Capitals" name="callCapital"  value="c"/>
+        </div>
+        <div class="button">
+            <button type="submit">Submit</button>
+            
+        </div>
+    </form>
+    <h1>{{message}}</h1>
+    <h1>{{session.get("my_score",0)}}</h1>
+    </div>
+ 
+
+    
+
+    
+</body>
+</html>

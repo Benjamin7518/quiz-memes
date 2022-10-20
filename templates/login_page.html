@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+    <style>
+        body{
+            color: rgb(15, 9, 9);
+            background-color: black;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border: solid;
+            border-color: white;
+            background-color: white;
+            height: 400px;
+            width: 800px;
+            padding: 30px;
+            border-radius: 30px 30px 30px 30px;
+            font-size: xx-large;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        button{
+            padding: 10px;
+            font-size: larger;
+            color: rgb(255, 255, 255);
+            background-color: blue;
+            font-size: large;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .button{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+        }
+        .field{
+            display: grid;
+            gap: 10px;
+        }
+        input{
+            width: 100%;
+        }
+        h1{
+            color: white;
+        }
+        h2{
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <form action="/login" method="post">
+        <h3>Login</h3>
+        <div class="field">
+            <div class="label">
+                <label for="">Email</label>
+            </div>
+            <div class="input">
+                <input type="email" name="em">
+            </div>
+            <div class="label">
+                <label for="">Password</label>
+            </div>
+            <div class="input">
+                <input type="password" name="ps">
+            </div>
+                <div class="button">
+                    <button type="submit">Login
+
+                    </button> <br>
+                </div>
+                <h2>New user? <a href="/registration">Click here</a> to register</h2>
+        </div>
+    </form>
+    <h1>{{message}}</h1>
+    
+</body>
+</html>

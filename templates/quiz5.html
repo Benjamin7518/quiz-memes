@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 5</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <div class="button">
+        <a href="/"><button type="submit">Home</button></a>
+    </div>
+    <div class="header_container">
+        <p>5. What is the capital of Tennessee?</p>
+</div>
+<div class="container">
+<form action="/validateq5">
+    <div class="Field">
+        <label for="Nashville">
+            Nashville
+            </label>
+        <input type="radio" id="Nashville" name="callCapital" value="a"/>
+    </div>
+    <div class="Field">
+        <label for="Memphis">
+             Memphis
+            </label>
+        <input type="radio" id="Memphis" name="callCapital" value="b"/>
+    </div>
+    <div class="Field">
+        <label for="Chattanooga">
+            Chattanooga
+            </label>
+        <input type="radio" id="Chattanooga" name="callCapital" value="c"/>
+    </div>
+    <div class="button">
+        <button type="submit">Submit</button>
+    </div>
+</form>
+<h1>{{message}}</h1>
+<h1>{{session.get("my_score",0)}}</h1>
+</div>
+</body>
+</html>

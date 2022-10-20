@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <style>
+        .field{
+
+            display:inline-flex;
+            gap:10px;
+            justify-content: space-between ;
+        }
+        form{
+            display:inline-flex;
+            flex-direction: column;
+            gap:10px;
+            background-color: rgb(25, 0, 255);
+            padding: 10px;
+            color: white;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+            color: white;
+            font-size: xx-large;
+            flex-direction: column;
+        }
+        form{
+            display: flex;
+            border-radius: 30px 30px 30px 30px;
+            padding: 40px;
+            font-size: 35px;
+            font-family: 'Courier New', Courier, monospace;
+
+        }
+        input{
+            font-size: 25px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        button{
+            font-size: 20px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        h2{
+            font-size: 30px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Registration Page</h1>
+    <form action="/registration" method="post">
+        <div class="field">
+            <div class="label">
+                <label for="">Last Name:</label>
+            </div>
+            <div class="input">
+                <input type="text" name="ln" id="">
+            </div>
+        </div>
+
+        <div class="field">
+            <div class="label">
+                <label for="">First Name:</label>
+            </div>
+            <div class="input">
+                <input type="text" name="fn" id="">
+            </div>
+        </div>
+        <div class="field">
+            <div class="label">
+                <label for="">Email:</label>
+            </div>
+            <div class="input">
+                <input type="email" name="em" id="">
+            </div>
+        </div>
+        <div class="field">
+            <div class="label">
+                <label for="">Phone Number:</label>
+            </div>
+            <div class="input">
+                <input type="tel" name="pn" id="">
+            </div>
+        </div>
+        <div class="field">
+            <div class="label">
+                <label for="">Password:</label>
+            </div>
+            <div class="input">
+                <input type="password" name="ps" id="">
+            </div>
+        </div>
+        <div class="field">
+            <div class="label">
+                <label for="">Confirm Password:</label>
+            </div>
+            <div class="input">
+                <input type="password" name="cps" id="">
+            </div>
+        </div>
+        
+        <div class="field">
+            <div class="button">
+                <button type="submit">Register
+                </button>
+                <h2>Already Registered?  <a href="/login">Click here</a> to login</h2>
+                    
+            </div> 
+        </div>
+    </form>
+{{message}}
+</body>
+</html>

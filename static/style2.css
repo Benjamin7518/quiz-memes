@@ -1,0 +1,123 @@
+.header_container1{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: orange;
+    border: solid orange;
+    padding: 10px;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+.buttons {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.album {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin: 10%;
+    gap: 20px;
+    font-family: verdana;
+    
+}
+.image img {
+    width: 100%;
+    height: 100%;
+}
+.button2{
+    display: flex;
+}
+.paragraph{
+    padding: 10px;
+}
+button{
+    padding: 5px;
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 10px 0 0 10px  ;  
+}
+
+
+.buttons{
+   padding: 10px;
+}
+button:hover{
+   background-color: grey;
+   outline: solid;
+}
+.image {
+   height: 200px;
+   border: solid;
+}
+h1 {
+   grid-column: 1/4;
+   text-align: center;
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    justify-content: flex-end;
+
+}
+li{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+    margin-right: 20px;
+    gap: 10px;
+    
+}
+svg{
+   color: white;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+        .container{
+            display: grid;
+            justify-content: center;
+            text-align: center;
+            background-color: rgba(255, 0, 0, 0.525);
+        }
+        
+        
+        
+        body{
+            
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            box-shadow: 0 0 50px 0 grey;
+            background-image: url(./BG2.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+        }
+
+        button{
+            background-color: royalblue;
+            padding: 10px 20px 10px 20px;
+            border-radius: 5px;
+            color: white ;
+            font-size: 20px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            width: 100%;
+        }

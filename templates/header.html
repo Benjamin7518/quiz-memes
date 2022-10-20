@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="static/style2.css">
+</head>
+<body>
+    <div class="header_container1">
+        <div class="logo">logo
+            <img src="" alt="">
+        </div>
+        <div class="navigation">
+            <ul>
+                <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-question-lg" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M4.475 5.458c-.284 0-.514-.237-.47-.517C4.28 3.24 5.576 2 7.825 2c2.25 0 3.767 1.36 3.767 3.215 0 1.344-.665 2.288-1.79 2.973-1.1.659-1.414 1.118-1.414 2.01v.03a.5.5 0 0 1-.5.5h-.77a.5.5 0 0 1-.5-.495l-.003-.2c-.043-1.221.477-2.001 1.645-2.712 1.03-.632 1.397-1.135 1.397-2.028 0-.979-.758-1.698-1.926-1.698-1.009 0-1.71.529-1.938 1.402-.066.254-.278.461-.54.461h-.777ZM7.496 14c.622 0 1.095-.474 1.095-1.09 0-.618-.473-1.092-1.095-1.092-.606 0-1.087.474-1.087 1.091S6.89 14 7.496 14Z"/>
+                  </svg><a href="/quiz1">Quiz</a></li>
+                <li><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-house-fill" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+                    <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
+                  </svg><a href="/">Home</a></li>
+                <li><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-calendar3" viewBox="0 0 16 16">
+                    <path d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z"/>
+                    <path d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                  </svg></i><a href="">Score={{session.get('my_score',0)}}</a></li>
+                {% if session.get("Login") %}
+                  <li><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-border-all" viewBox="0 0 16 16">
+                      <path d="M0 0h16v16H0V0zm1 1v6.5h6.5V1H1zm7.5 0v6.5H15V1H8.5zM15 8.5H8.5V15H15V8.5zM7.5 15V8.5H1V15h6.5z"/>
+                    </svg><a href="/log_out">Log Out</a></li>
+                {% else %}
+                <li><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-border-all" viewBox="0 0 16 16">
+                    <path d="M0 0h16v16H0V0zm1 1v6.5h6.5V1H1zm7.5 0v6.5H15V1H8.5zM15 8.5H8.5V15H15V8.5zM7.5 15V8.5H1V15h6.5z"/>
+                  </svg><a href="/registration">Registration/Login</a></li>
+                {% endif %}
+                
+            </ul>
+        </div>
+
+    </div>
+    <div class="album">
+    <div class="container">
+        <div class="image">
+            <img src="./static/download.jfif" alt="">
+        </div>
+        <div class="paragraph"> 
+            <p>Funny Memes that will make your day</p>
+        </div>
+        <div class="buttons">
+            <div class="button2">
+                <button>
+                    View
+                </button>
+                <button>
+                    Edit
+                </button>
+            </div>
+                
+            <p></p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="image">
+            <img src="/static/fact.webp" alt="">
+        </div>
+        <div class="paragraph"> 
+            <p>Funny Memes that will make your day</p>
+        </div>
+        <div class="buttons">
+            <div class="button2">
+                <button>
+                    View
+                </button>
+                <button>
+                    Edit
+                </button>
+            </div>
+                
+            <p></p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="image">
+            <img src="static/covid.webp" alt="">
+        </div>
+        <div class="paragraph"> 
+            <p>Funny Memes that will make your day</p>
+        </div>
+        <div class="buttons">
+            <div class="button2">
+                <button>
+                    View
+                </button>
+                <button>
+                    Edit
+                </button>
+            </div>
+                
+            <p></p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="image">
+            <img src="static/person-assault-vehicle-acquired.jfif" alt="">
+        </div>
+        <div class="paragraph"> 
+            <p>Funny Memes that will make your day</p>
+        </div>
+        <div class="buttons">
+            <div class="button2">
+                <button>
+                    View
+                </button>
+                <button>
+                    Edit
+                </button>
+            </div>
+                
+            <p></p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="image">
+            <img src="static/justno.webp" alt="">
+        </div>
+        <div class="paragraph"> 
+            <p>Funny Memes that will make your day</p>
+        </div>
+        <div class="buttons">
+            <div class="button2">
+                <button>
+                    View
+                </button>
+                <button>
+                    Edit
+                </button>
+            </div>
+                
+            <p></p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="image">
+            <img src="static/images.jfif" alt="">
+        </div>
+        <div class="paragraph"> 
+            <p>Funny Memes that will make your day</p>
+        </div>
+        <div class="buttons">
+            <div class="button2">
+                <button>
+                    View
+                </button>
+                <button>
+                    Edit
+                </button>
+            </div>
+                
+            <p></p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="image">
+            <img src="static/images (1).jfif" alt="">
+        </div>
+        <div class="paragraph"> 
+            <p>Funny Memes that will make your day</p>
+        </div>
+        <div class="buttons">
+            <div class="button2">
+                <button>
+                    View
+                </button>
+                <button>
+                    Edit
+                </button>
+            </div>
+                
+            <p></p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="image">
+            <img src="static/titanic2.jpg" alt="">
+        </div>
+        <div class="paragraph"> 
+            <p>Funny Memes that will make your day</p>
+        </div>
+        <div class="buttons">
+            <div class="button2">
+                <button>
+                    view
+                </button>
+                <button>
+                    edit
+                </button>
+            </div>
+                
+            <p></p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="image">
+            <img src="static/funny.jpg" alt="">
+        </div>
+        <div class="paragraph"> 
+            <p>Funny Memes that will make your day</p>
+        </div>
+        <div class="buttons">
+            <div class="button2">
+                <button>
+                    view
+                </button>
+                <button>
+                    edit
+                </button>
+            </div>
+                
+            <p></p>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
